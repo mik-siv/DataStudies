@@ -1,0 +1,23 @@
+{
+  "name": "datastudies",
+  "version": "1.0.0",
+  "description": "A repo to study algoriths and data structures",
+  "main": "app.ts",
+  "scripts": {
+    "start:watch": "npx ts-node app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mik-siv/DataStudies.git"
+  },
+  "author": "Mikhail Sivinskikh <mikhail.sivinskikh@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mik-siv/DataStudies/issues"
+  },
+  "homepage": "https://github.com/mik-siv/DataStudies#readme",
+  "dependencies": {
+    "ts": "^0.0.0",
+    "ts-node": "^10.9.1"
+  }
+}
