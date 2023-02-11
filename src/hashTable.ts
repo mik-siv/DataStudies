@@ -29,10 +29,24 @@ class HashTable {
     }
     return undefined;
   }
+
+  get keys(): any[] {
+    let keys: any[] = [];
+    for (const key in this.#data) {
+      if (this.#data[key]) {
+        this.#data[key].forEach((element: any[]) => {
+          keys.push(element[0]);
+        });
+      }
+    }
+    return keys;
+  }
 }
 
 const myHashTable = new HashTable(50);
 console.log(myHashTable.set("grapes", 10000));
 console.log(myHashTable.get("grapes"));
-// myHashTable.set("apples", 9);
-// myHashTable.get("apples");
+myHashTable.set("apples", 9);
+myHashTable.get("apples");
+
+console.log(myHashTable.keys);
