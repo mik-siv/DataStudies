@@ -1,5 +1,5 @@
 //@ts-ignore
-class ListNode {
+export class ListNode {
   value: any;
   next: ListNode | null;
   constructor(value: any) {
@@ -8,6 +8,7 @@ class ListNode {
   }
 }
 
+//@ts-ignore
 class LinkedList {
   head: ListNode | null;
   tail: ListNode | null;
@@ -101,14 +102,3 @@ class LinkedList {
     return this.printList();
   }
 }
-
-const newList = new LinkedList(10);
-
-newList.prepend(1);
-newList.append(16);
-newList.append(5);
-
-newList.insert(0, 777);
-console.log(newList.printList());
-newList.remove(2);
-console.log(newList.printList());

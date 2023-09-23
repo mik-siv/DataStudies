@@ -103,3 +103,10 @@ dist
 # TernJS port file
 .tern-port
 test.json
+app.ts
+app.ts
+mergeLists.ts
+.gitignore
+test2.js
+test.js
+app.ts
